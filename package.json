@@ -1,0 +1,29 @@
+{
+  "name": "personal_website",
+  "version": "1.0.0",
+  "description": "Jiyun's website",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run lite",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lite": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jby5122/jy_personal_website.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jby5122/jy_personal_website/issues"
+  },
+  "homepage": "https://github.com/jby5122/jy_personal_website#readme",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  },
+  "dependencies": {
+    "bootstrap": "^4.6.0",
+    "jquery": "^3.6.0",
+    "popper.js": "^1.12.9"
+  }
+}
