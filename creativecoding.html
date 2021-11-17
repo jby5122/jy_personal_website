@@ -59,6 +59,7 @@
                     <p>At the beginning of my code, I first test out if the photocells are catching the signal with the “println” function. After knowing my threshold in this case, which is around 10~15 when someone fully touches the photocell, I start the coding. When no one is touching the photocell, the reading is high because it receives more lights, I design the Led to blink in random color to stand for “no result yet” or “processing”. After the photocells are touched, the color will be random generated to represent the relationship between two players. Here is my code for the first-round debug. </p>
                     <img src="creative_coding/ass10/2.png" class="img-fluid" alt="Responsive image">
                     <p>Then I realize, if I connect two statements with else if, the loop will just be refreshing itself in a fast rate. But if I change two statements into separate if loops, the state of Led will stuck at the result part. </p>
+                    <img src="creative_coding/ass10/3.png" class="img-fluid" alt="Responsive image">
                     <img src="creative_coding/ass10/1.png" class="img-fluid" alt="Responsive image">
                     <p>The challenge is that if I can find another way to start reading the signal again when hands are off the photocells. I tried “exit(0)” and “breaks” but the logic does not really work. Then I realize that I have a physical reset button on the board that I can use. So every time I hit the reset button, I can play with it again. </p>
                     <iframe width="600" height="450"
