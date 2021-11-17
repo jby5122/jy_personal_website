@@ -50,6 +50,25 @@
             <div class="row row-content align-items-center">
                 <div class="col-8 col-sm-8">
                     
+                    <h1>Week 10 compatibility machine, Nov 17, 2021</h1>
+                    <p>This week assignment is to make a compatibility machine. Inspiring by the lecture content, I think it will be fun to use the RGB Led as the output. For the input, I choose the two photocells in our kits. Then I start to think about the logic behind my compatibility machine. I want different colors to stand for different relationships, so I color-code them as below:</p>
+                    <p>Red = You two have potential to become sweet lovers;</p>
+                    <p>Blue = You can become good teammate/business partner;</p>
+                    <p>Green = You two are the best friends to each other;</p>
+                    <img src="creative_coding/ass10/colorcode.jpg" class="img-fluid" alt="Responsive image">
+                    <p>At the beginning of my code, I first test out if the photocells are catching the signal with the “println” function. After knowing my threshold in this case, which is around 10~15 when someone fully touches the photocell, I start the coding. When no one is touching the photocell, the reading is high because it receives more lights, I design the Led to blink in random color to stand for “no result yet” or “processing”. After the photocells are touched, the color will be random generated to represent the relationship between two players. Here is my code for the first-round debug. </p>
+                    <img src="creative_coding/ass10/2.png" class="img-fluid" alt="Responsive image">
+                    <p>Then I realize, if I connect two statements with else if, the loop will just be refreshing itself in a fast rate. But if I change two statements into separate if loops, the state of Led will stuck at the result part. </p>
+                    <img src="creative_coding/ass10/1.png" class="img-fluid" alt="Responsive image">
+                    <p>The challenge is that if I can find another way to start reading the signal again when hands are off the photocells. I tried “exit(0)” and “breaks” but the logic does not really work. Then I realize that I have a physical reset button on the board that I can use. So every time I hit the reset button, I can play with it again. </p>
+                    <iframe width="600" height="450"
+                        src="https://youtube.com/embed/7V-4Gvs4Wgo" allowfullscreen>
+                    </iframe>
+                    <p>Here is a surprising mistake when I try the “break” function: the light will become brighter as two fingers hold it longer. </p>
+                    <iframe width="600" height="450"
+                        src="https://youtube.com/embed/d2OzvEuKBQ8" allowfullscreen>
+                    </iframe>
+                    <p>--------------------------------------------------------</p>
                     <h1>Lighting feedback device, Nov 10, 2021</h1>
                     <p>I was looking through what we have in the kit and I found this: the photocell. I think it is really cool because it is my first time to see an actual light sensor component itself in reality. So I think it will be cool if I can use it for this week assignment. </p>
                     <p>As midterm passed by, or people getting old, I think we all have some eyes issues when the workload in front of the computer gets heavy. I want to make sure that I have the right environment to study to protect my vision, which is that I need to have enough light. I choose a green led indicating a good lighting environment for study, and a yellow led indicating a bad environment for study. </p>
