@@ -50,6 +50,36 @@
             <div class="row row-content align-items-center">
                 <div class="col-8 col-sm-8">
                     
+                    <h1>Stress Ball, Dec 8 2021</h1>
+                    <p>For the final project, I am going to make a stress ball because everyone is so stress during final time. I decide to challenge the combination with Arduino and P5 because for stress release experience I need both. So, I start with construct the basic structure of my projects.</p>
+                    <p>First, I need to decide what sensor I should use in. When it comes to stress, the force sensor (FRS) is the obvious answer. I connect the Arduino with a force sensor and resistor. After the successfully try-out on the Arduino-uno, I think it will be fun to challenge the Bluetooth function of Arduino nano, mainly because I want the ball to be free from computer when people play with it. Then, I start building up the p5 sketch.</p>
+                    <img src="creative_coding/final/rough nano.jpg" class="img-fluid" alt="Responsive image">
+                    <p>To react with the force sensor in Arduino, I start thinking when are the movements that can make people feel stress release. Thinking about my own experience, I choose air bubbles for the first mode. I will try to implement the second mode if I have extra, maybe I will do the breaking instant noodles as the second mode. For the air bubbles, I use a image from google image and use Procreate to take out 3 status of the bubble: good bubble, gently pushed bubble, and the destroyed bubble.</p>
+                    <img src="creative_coding/final/allballs.png" class="img-fluid" alt="Responsive image">
+                    <img src="creative_coding/final/balls.jpg" class="img-fluid" alt="Responsive image">
+                    <p>Then I start testing the functionality between Arduino and P5. I first build up the Bluetooth connection, read the sensor from the Arduino. Then I map the reading to a reasonable squeeze number to trigger the animation in the p5. The different values of the force will start the different animation for the bubbles. At first, I can only squeeze all the bubbles at the same time. After playing with arrays and matrix, I found my way to randomly generate different conditions of bubbles. Here is a video demonstration.</p>
+                    <iframe width="600" height="450"
+                        src="https://youtube.com/embed/docBjtQaHTU" allowfullscreen>
+                    </iframe>
+                    <p>After the basic function settle down, I start to polish the project. I need to find a real squish ball to be my ball, and I bought one from amazon. But I need to cut them out and put the sensor inside, also they are not transparent. So I start to think building the ball by myself. I was able to find this project online of how they 3D printed a mold and then build a ball from silicone rubber (https://martinaltanie.com/ballrum). Then I start building the ball. </p>
+                    <img src="creative_coding/final/mold.jpg" class="img-fluid" alt="Responsive image">
+                    <p>Having a semi-transparent ball, I think it will be cool if have a Led inside so there is more feedback when player squeeze the ball. That is why I add the RGB Led to my circuits. </p>
+                    <img src="creative_coding/final/addled.jpg" class="img-fluid" alt="Responsive image">
+                    <p>I solder the led to wires after I test the functionality of the code. And then it is time to build some extra component for this set. I use Solidwork to build the box of the ball holder. It is assembled by a box and a lid at the bottom. I 3D print the model, clean the support, assemble the circuits with the box and the stress ball together in the below video. </p>
+                    <iframe width="600" height="450"
+                        src="https://youtube.com/embed/Yk9TzZiu9-0" allowfullscreen>
+                    </iframe>
+                    <p>With the beautiful Led feedback and the p5 animation, I still think there is a room for improvement. The experience feels different compare to actually playing with air bubbles, and it is not much stress release. I wonder for a while and then realize I am missing the sound of the interaction. So I add the popping sound at the end. Now, plug in the set, connect the Bluetooth with p5, you can enjoy the unique experience of stress releasing. When you squeeze the ball with normal force, you get one reaction (images change to the middle version of the bubble, led flashing, pop sound). When you squeeze harder, you get the second reaction (images changes to the worse version of the bubble, led flashing even faster, and a different pop sound). Hope you like it!</p>
+                    <iframe width="600" height="450"
+                        src="https://youtube.com/embed/ydrbdFFF5Ps" allowfullscreen>
+                    </iframe>
+                    <p>Sensor I use: <br>
+                        https://learn.adafruit.com/force-sensitive-resistor-fsr/using-an-fsr<br>
+                        p5 play library:<br>
+                        https://molleindustria.github.io/p5.play/examples/index.html?fileName=animation.js<br>
+                        </p>
+                    <p>--------------------------------------------------------</p>
+
 
                     <h1>Week 11 Physical Interface， Nov 24 2021</h1>
                     <p>For the physical interface, I was lost because I think there are so many things I can do. I can relate temperature with a temperature sensor, a force sensor to detect force… It was hard at the beginning to know what I should do. Then I think, p5 is all about visualize coding into image. Maybe I should try to visualize a sensor and its meaning into some beautiful image. </p>
